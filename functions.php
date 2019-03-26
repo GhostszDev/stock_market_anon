@@ -10,12 +10,12 @@ function ghs_scrs(){
 
     //js scripts
 
-    wp_enqueue_script('jq', get_stylesheet_directory_uri() . '/js/jquery-2.1.3.js');
-    wp_enqueue_script('angularjs', get_stylesheet_directory_uri() . '/js/angular.min.js');
-    wp_enqueue_script('angularjs-resource', get_stylesheet_directory_uri() . '/js/angular-resource.min.js');
-    wp_enqueue_script('angularjs-route',  get_stylesheet_directory_uri() . '/js/angular-route.min.js');
-    wp_enqueue_script('cookies',  get_stylesheet_directory_uri() . '/js/cookies.js');
-    wp_enqueue_script('GhsJS', get_stylesheet_directory_uri() . '/js/GhsJS.js', array( 'angularjs', 'angularjs-route', 'angularjs-resource', 'jq', 'cookies'), true);
+    wp_enqueue_script('jq', get_stylesheet_directory_uri() . '/scripts/js/jquery-2.1.3.js');
+    wp_enqueue_script('angularjs', get_stylesheet_directory_uri() . '/scripts/js/angular.min.js');
+    wp_enqueue_script('angularjs-resource', get_stylesheet_directory_uri() . '/scripts/js/angular-resource.min.js');
+    wp_enqueue_script('angularjs-route',  get_stylesheet_directory_uri() . '/scripts/js/angular-route.min.js');
+    wp_enqueue_script('cookies',  get_stylesheet_directory_uri() . '/scripts/js/cookies.js');
+    wp_enqueue_script('GhsJS', get_stylesheet_directory_uri() . '/scripts/js/GhsJS.js', array( 'angularjs', 'angularjs-route', 'angularjs-resource', 'jq', 'cookies'), true);
 
     //localization of scripts
     wp_localize_script('GhsJS', 'myLocalized', array('partials' => trailingslashit( get_template_directory_uri() ) . 'partials/'));
