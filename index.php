@@ -2,6 +2,6 @@
 
 get_header();
 
-echo "Hello";
+require_once(dirname(__FILE__) . '/partials/main.html');
 
 get_footer();
