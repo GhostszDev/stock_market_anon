@@ -1,4 +1,4 @@
-angular.module('mod', ['ngRoute', 'ngCookie'])
+angular.module('smApp', ['ngRoute', 'ngCookie', 'ngMaterial', 'ngMessages'])
     .controller('contrl', function($http, $scope){
 
         //params
