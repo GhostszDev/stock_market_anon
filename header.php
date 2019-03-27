@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="smApp" ng-controller="contrl" ng-cloak>
     <head>
         <?php wp_head(); ?>
     </head>
-    <body ng-app="smApp" ng-cloak>
+    <body>
